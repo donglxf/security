@@ -43,6 +43,7 @@ public class WebConfig {
 
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        // 一体机配置
 //        http.formLogin().loginPage("/login")
 //                .loginProcessingUrl("/webLogin") // 此请求会触发登陆逻辑验证，执行UserDetailsService的实现类验证逻辑
 //                .successForwardUrl("/success").failureForwardUrl("/fail")
@@ -57,6 +58,7 @@ public class WebConfig {
 //                )
 //                .csrf().disable()
 //                .build();
+
         http.csrf().disable();
         return http
                 //不通过Session获取SecurityContext
