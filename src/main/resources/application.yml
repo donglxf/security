@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  profiles:
+    active: local
+#  thymeleaf:
+#    cache: false
+#    prefix: classpath:/templates/
+#    suffix: .html
+#    encoding: utf-8
+#    servlet:
+#      content-type: text/html
+#    mode: HTML
